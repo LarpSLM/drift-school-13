@@ -1,0 +1,153 @@
+.background_video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -2;
+    background-color: #000000
+}
+
+.background_video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.page {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5rem;
+    font-family: Nobel,Helvetica,Arial,Roboto,sans-serif;
+    padding: 10px 15px;
+    float: right;
+}
+
+.navbar .phone {
+    color: #24b8f0;
+}
+
+.navbar .phone:hover,
+nav .logo:hover {
+    border-bottom: none;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    height: 75px;
+    width: 100px;
+    background: url(../img/logo.webp) no-repeat left;
+    background-size: contain;
+}
+
+nav {
+    height: 600px;
+    width: 460px;
+    padding-top: 15vh;
+}
+
+.menu {
+    width: 285px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #e3e4e6;
+    font-family: Nobel Light,Helvetica,Arial,Roboto,sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin: 1em 0;
+    padding-bottom: 2px;
+    width: auto;
+}
+
+nav a:hover {
+    color: #24b8f0;
+    transition: .3s;
+}
+
+
+
+nav h1,
+main h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    line-height: 2.75rem;
+    color: white;
+    font-family: Nobel,Helvetica,Arial,Roboto,sans-serif;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: #e3e4e6;
+    font-family: Nobel, Helvetica, Arial, Roboto, sans-serif;
+}
+
+.latest_1,
+.latest_2,
+.icons-wrap {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .85em;
+}
+
+.icons-wrap {
+    margin: 0 1vw;
+}
+
+.icons-wrap a {
+    padding: 0 0.5vh;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+.icons-wrap i:hover {
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.fa-instagram:hover {
+    color: #ff8847;
+}
+
+.fa-vk:hover {
+    color: #1c4889;
+}
+
+.fa-pinterest-p:hover {
+    color: #61a8c1;
+}
+
+.latest_2 a {
+    text-decoration: none;
+}

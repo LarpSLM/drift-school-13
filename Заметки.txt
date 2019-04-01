@@ -1,0 +1,10 @@
+Основной шрифт - "Magistral" (Italic)
+Дочерний - "OpenSansRegular"
+Дочерний 2 - OpenSansLight
+
+Скос: 
+widht 500px
+height 620px
+
+border-right: 150px solid transparent;
+border-top: 620px solid rgba(32,32,32,0.9);

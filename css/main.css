@@ -31,19 +31,47 @@ body {
   .navbar a {
     display: block;
     text-decoration: none;
+    line-height: 25px; }
+
+.navbarOne {
+  display: inline-block;
+  height: 100px;
+  width: 45vw;
+  padding-left: 10vw;
+  box-sizing: border-box;
+  vertical-align: top; }
+  .navbarOne p {
     line-height: 25px;
-    text-align: right; }
-  .navbar .navbarOne {
+    margin: 0; }
+  .navbarOne .you_city {
     display: inline-block;
-    height: 100px;
-    width: 45vw; }
-  .navbar .navbarTwo {
+    height: 25px;
+    margin-top: 25px; }
+    .navbarOne .you_city p {
+      font-family: "MagistralC", sans-serif;
+      color: white;
+      font-size: 1.1em; }
+  .navbarOne .name_city {
     display: inline-block;
-    margin: 5px 0;
-    height: 90px;
-    width: 10vw;
-    background: url("../img/logo.webp") no-repeat center;
-    background-size: contain; }
+    height: 25px; }
+    .navbarOne .name_city p {
+      font-family: "MagistralC-Bold", sans-serif;
+      color: #24b8f0;
+      font-size: 1.3em;
+      padding-left: .5vw; }
+  .navbarOne a {
+    font-family: "MagistralC-Bold", sans-serif;
+    color: white;
+    font-size: 1.2em;
+    font-style: italic; }
+
+.navbarTwo {
+  display: inline-block;
+  margin: 5px 0;
+  height: 90px;
+  width: 10vw;
+  background: url("../img/logo.webp") no-repeat center;
+  background-size: contain; }
 
 .navbarThree {
   display: inline-block;
@@ -74,10 +102,11 @@ body {
     font-size: 1.1em;
     font-family: "MagistralC", sans-serif;
     font-style: italic;
-    color: white; }
+    color: white;
+    text-align: right; }
 
-.navbar a:hover {
-  border-bottom: 1px solid white; }
+.descriptionSchool {
+  display: flex; }
 
 .logo {
   height: 75px;

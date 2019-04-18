@@ -27,7 +27,6 @@ body {
     object-fit: cover;
     z-index: -1;
   }
-
 }
 
 .contentOne {
@@ -48,24 +47,59 @@ body {
     display: block;
     text-decoration: none;
     line-height: 25px;
-    text-align: right;
+  }
+}
+
+.navbarOne {
+  display: inline-block;
+  height: 100px;
+  width: 45vw;
+  padding-left: 10vw;
+  box-sizing: border-box;
+  vertical-align: top;
+
+  p {
+    line-height: 25px;
+    margin: 0;
   }
 
-  .navbarOne {
+  .you_city {
     display: inline-block;
-    height: 100px;
-    width: 45vw;
+    height: 25px;
+    margin-top: 25px;
+    p {
+      font-family: $fontTwo;
+      color: $colorTwo;
+      font-size: 1.1em;
+    }
   }
 
-  .navbarTwo {
+  .name_city {
     display: inline-block;
-    margin: 5px 0;
-    height: 90px;
-    width: 10vw;
-    background: url("../img/logo.webp") no-repeat center;
-    background-size: contain;
+    height: 25px;
+    p {
+      font-family: $fontOne;
+      color: $colorOne;
+      font-size: 1.3em;
+      padding-left: .5vw;
+    }
   }
 
+  a {
+    font-family: $fontOne;
+    color: $colorTwo;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+}
+
+.navbarTwo {
+  display: inline-block;
+  margin: 5px 0;
+  height: 90px;
+  width: 10vw;
+  background: url("../img/logo.webp") no-repeat center;
+  background-size: contain;
 }
 
 .navbarThree {
@@ -107,8 +141,13 @@ body {
     font-family: $fontTwo;
     font-style: italic;
     color: $colorTwo;
+    text-align: right;
   }
 
+}
+
+.descriptionSchool {
+  display: flex;
 }
 
 
@@ -118,10 +157,6 @@ body {
 
 
 //old page
-
-.navbar a:hover {
-  border-bottom: 1px solid white;
-}
 
 .logo {
   height: 75px;

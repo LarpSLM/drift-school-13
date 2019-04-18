@@ -26,7 +26,7 @@ body {
 
 .navbar {
   height: 100px;
-  background-color: #171717;
+  background: rgba(17, 17, 17, 0.9);
   width: 100vw; }
   .navbar a {
     display: block;
@@ -105,61 +105,78 @@ body {
     color: white;
     text-align: right; }
 
-.logo {
-  height: 75px;
-  width: 100px;
-  background: url(../img/logo.webp) no-repeat left;
-  background-size: contain; }
+.descriptionSchool {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(17, 17, 17, 0.5); }
+  .descriptionSchool .content_description {
+    width: 860px;
+    height: 40vh;
+    text-align: center; }
+    .descriptionSchool .content_description .welcome {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 3em;
+      font-style: italic;
+      color: #24b8f0;
+      margin: 0;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white; }
+    .descriptionSchool .content_description .slang {
+      font-family: "MagistralC", sans-serif;
+      font-size: 2em;
+      font-style: italic;
+      color: white;
+      margin: 0; }
 
-nav {
-  height: 600px;
-  width: 460px;
-  padding-top: 15vh; }
-
-.menu {
-  width: 285px; }
-
-nav a {
-  display: block;
-  text-decoration: none;
-  color: #e3e4e6;
-  font-family: Nobel Light,Helvetica,Arial,Roboto,sans-serif;
-  font-size: 1.5em;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  margin: 1em 0;
-  padding-bottom: 2px;
-  width: auto; }
-
-nav a:hover {
-  color: #24b8f0;
-  transition: .3s; }
-
-nav h1,
-main h1 {
-  font-size: 2.5rem;
-  letter-spacing: 1.5px;
-  line-height: 2.75rem;
-  color: white;
-  font-family: 'MagistralC-Bold', sans-serif;
-  border-top: 3px solid;
-  border-bottom: 3px solid;
-  margin: 10px 0;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center; }
+.record {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 29vh;
+  padding: 2vh 0;
+  box-sizing: border-box; }
+  .record div {
+    width: 40%; }
+  .record h1 {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    font-family: "MagistralC-Bold", sans-serif;
+    font-size: 2.2em;
+    font-style: italic;
+    color: #24b8f0; }
+  .record h2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0 1vh;
+    font-family: "MagistralC-Bold", sans-serif;
+    font-size: 1.9em;
+    font-style: italic;
+    color: #24b8f0; }
+  .record p {
+    text-align: center;
+    margin: 0;
+    font-family: "MagistralC", sans-serif;
+    font-size: 1.3em;
+    color: white;
+    font-style: italic; }
 
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  z-index: 999; }
 
 footer p {
   text-align: center;
   color: #e3e4e6;
-  font-family: Nobel, Helvetica, Arial, Roboto, sans-serif; }
+  font-family: "MagistralC", sans-serif; }
 
 .latest_1,
 .latest_2,
@@ -193,10 +210,14 @@ footer p {
 .latest_2 a {
   text-decoration: none; }
 
-.onediv,
+.onediv {
+  width: 100%;
+  height: 100vh;
+  background-color: white; }
+
 .twodiv {
   width: 100%;
-  height: 700px;
-  background-color: green; }
+  height: 100vh;
+  background-color: #24b8f0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -43,7 +43,7 @@ body {
   position: absolute;
   z-index: 3;
   top: 0;
-  background: url("../img/pointbg3.png");
+  background: $visibilityTwo;
 }
 
 .navbar {
@@ -156,22 +156,23 @@ body {
 
 .descriptionSchool {
   width: 100vw;
-  height: 88vh;
+  height: calc(100vh - 100px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: $visibilityTwo;
+  background: url("../img/pointbg3.png");
 
   .content_description {
-    width: 860px;
+    width: 840px;
     height: 40vh;
     text-align: center;
 
     .welcome {
       font-family: $fontOne;
-      font-size: $font_h1Big;
+      font-size: $font_h2Big;
       font-style: italic;
+      text-transform: uppercase;
       color: $colorOne;
       margin: 0;
       border-top: 2px solid $colorTwo;
@@ -230,6 +231,11 @@ body {
     color: $colorTwo;
     font-style: italic;
   }
+}
+
+.history {
+  width: 100vw;
+
 }
 
 

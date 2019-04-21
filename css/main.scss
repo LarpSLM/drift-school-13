@@ -651,12 +651,11 @@ body {
     }
   }
 
-  .amenities_one:hover > ul li,
-  .amenities_two:hover > ul li,
-  .amenities_three:hover > ul li {
+  .amenities_one:hover > .amenities_content ul li,
+  .amenities_two:hover > .amenities_content ul li,
+  .amenities_three:hover > .amenities_content ul li {
     color: black;
     font-family: $fontOne;
-
   }
 
   .amenities_one:hover > h2,

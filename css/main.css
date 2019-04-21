@@ -498,9 +498,9 @@ body {
       width: 100%;
       height: auto;
       overflow: hidden; }
-  .amenities .amenities_one:hover > ul li,
-  .amenities .amenities_two:hover > ul li,
-  .amenities .amenities_three:hover > ul li {
+  .amenities .amenities_one:hover > .amenities_content ul li,
+  .amenities .amenities_two:hover > .amenities_content ul li,
+  .amenities .amenities_three:hover > .amenities_content ul li {
     color: black;
     font-family: "MagistralC-Bold", sans-serif; }
   .amenities .amenities_one:hover > h2,

@@ -1,0 +1,819 @@
+$colorOne: #24b8f0;
+$colorTwo: white;
+$fontOne: 'MagistralC-Bold', sans-serif;
+$fontTwo: 'MagistralC', sans-serif;
+$font_h1Small: 1.3em;
+$font_h2Small: 1.1em;
+$font_h1Middle: 2.2em;
+$font_h2Middle: 1.9em;
+$font_h1Big: 3em;
+$font_h2Big: 2.4em;
+$font_p: 1.6em;
+$visibility: rgba(17, 17, 17, 0.9);
+$visibilityTwo: rgba(17, 17, 17, 0.5);
+$darkNoGlass: #323232;
+$darkGlass: rgba(32, 32, 32,0.9);
+$lightNoGlass: #fafafa;
+$lightGlass: rgba(250, 250, 250, 0.9);
+
+@font-face {
+  font-family: 'MagistralC-Bold';
+  src: url("../fonts/MagistralC-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'MagistralC';
+  src: url("../fonts/MagistralC.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+//ОБЩИЕ СТИЛИ САЙТА
+
+.name_page {
+  background: url("../img/pointbg3.png")$darkGlass;
+  padding: 50px 0;
+  text-align: center;
+
+  .name_header {
+    display: inline-block;
+    font-family: $fontOne;
+    font-style: italic;
+    font-size: $font_h1Big;
+    color: $colorOne;
+    margin: 0;
+    padding: 0 10px;
+    border-top: 1px solid $colorTwo;
+    border-bottom: 1px solid $colorTwo;
+  }
+}
+
+
+//ТИТУЛЬНЫЙ РАЗДЕЛ
+
+
+.background_video {
+  overflow: hidden;
+  position: relative;
+
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.contentOne {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  background: $visibilityTwo;
+}
+
+.navbar {
+  height: 100px;
+  background: $visibility;
+  width: 100vw;
+
+  a {
+    display: block;
+    text-decoration: none;
+    line-height: 25px;
+  }
+}
+
+.navbarOne {
+  display: inline-block;
+  height: 100px;
+  width: 45vw;
+  padding-left: 10vw;
+  box-sizing: border-box;
+  vertical-align: top;
+
+  p {
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .you_city {
+    display: inline-block;
+    height: 25px;
+    margin-top: 25px;
+    p {
+      font-family: $fontTwo;
+      color: $colorTwo;
+      font-size: $font_h2Small;
+    }
+  }
+
+  .name_city {
+    display: inline-block;
+    height: 25px;
+    p {
+      font-family: $fontOne;
+      color: $colorOne;
+      font-size: $font_h1Small;
+      padding-left: .5vw;
+    }
+  }
+
+  a {
+    font-family: $fontOne;
+    color: $colorTwo;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+}
+
+.navbarTwo {
+  display: inline-block;
+  margin: 5px 0;
+  height: 90px;
+  width: 10vw;
+  background: url("../img/logo.webp") no-repeat center;
+  background-size: contain;
+}
+
+.navbarThree {
+  display: inline-block;
+  height: 100px;
+  width: 45vw;
+  padding-right: 10vw;
+  box-sizing: border-box;
+  text-align: right;
+  vertical-align: top;
+
+  .leftThree {
+    display: inline-block;
+    height: 100px;
+    width: 15vw;
+
+    i {
+      color: $colorTwo;
+      font-size: 30px;
+      margin: 35px 0;
+    }
+  }
+
+  .rightThree {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+  }
+
+  .phone {
+    font-size: $font_h1Small;
+    font-family: $fontOne;
+    color: $colorOne;
+    padding-top: 25px;
+  }
+
+  .mail {
+    font-size: $font_h2Small;
+    font-family: $fontTwo;
+    font-style: italic;
+    color: $colorTwo;
+    text-align: right;
+  }
+
+}
+
+.descriptionSchool {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/pointbg3.png");
+
+  .content_description {
+    width: 840px;
+    height: 40vh;
+    text-align: center;
+
+    .welcome {
+      font-family: $fontOne;
+      font-size: $font_h2Big;
+      font-style: italic;
+      text-transform: uppercase;
+      color: $colorOne;
+      margin: 0;
+      border-top: 2px solid $colorTwo;
+      border-bottom: 2px solid $colorTwo;
+    }
+
+    .slang {
+      font-family: $fontTwo;
+      font-size: 2em;
+      font-style: italic;
+      color: $colorTwo;
+      margin: 0;
+    }
+  }
+}
+
+.record {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 29vh;
+  padding: 2vh 0;
+  box-sizing: border-box;
+
+  div {
+    width: 40%;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    font-family: $fontOne;
+    font-size: $font_h1Middle;
+    font-style: italic;
+    color: $colorOne;
+
+  }
+
+  h2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0 1vh;
+    font-family: $fontOne;
+    font-size: $font_h2Middle;
+    font-style: italic;
+    color: $colorOne;
+
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+    font-family: $fontTwo;
+    font-size: $font_h1Small;
+    color: $colorTwo;
+    font-style: italic;
+  }
+}
+
+//РАЗДЕЛ ОПИСАНИЯ ШКОЛЫ
+
+.school_description {
+  background: url("../img/school.jpg");
+  background-size: contain;
+
+  h1 {
+    font-family: $fontOne;
+    font-style: italic;
+    font-size: $font_h1Big;
+    color: $colorOne;
+    text-align: center;
+    margin: 0;
+
+  }
+
+  p {
+    font-family: $fontOne;
+    font-size: $font_p;
+    color: $colorTwo;
+    text-align: justify;
+    margin: 10px 0;
+  }
+}
+
+.history {
+  width: 100%;
+  background: url("../img/history_1920.jpg");
+  background-size: cover;
+  height: 450px;
+  text-align: right;
+
+  .section {
+    display: inline-block;
+    border-left: 150px solid transparent;
+    border-top: 450px solid $darkGlass;
+  }
+
+  .history_description {
+    display: inline-block;
+    width: 40vw;
+    height: 450px;
+    background: $darkGlass;
+    padding: 30px;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    h1 {
+      padding: 30px;
+    }
+  }
+}
+
+.idea {
+  width: 100%;
+  background: url("../img/idea_1920.jpg");
+  background-size: cover;
+  height: 450px;
+  text-align: left;
+
+  .section_baseline {
+    display: inline-block;
+    border-right: 150px solid transparent;
+    border-top: 450px solid $darkGlass;
+  }
+
+  .idea_description {
+    display: inline-block;
+    width: 40vw;
+    height: 450px;
+    background: $darkGlass;
+    padding: 30px;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    h1 {
+      padding: 30px;
+    }
+  }
+}
+
+.method {
+  width: 100%;
+  background: url("../img/method_1920.jpg");
+  background-size: cover;
+  height: 450px;
+  text-align: right;
+
+  .section {
+    display: inline-block;
+    border-left: 150px solid transparent;
+    border-top: 450px solid $darkGlass;
+  }
+
+  .method_description {
+    display: inline-block;
+    width: 40vw;
+    height: 450px;
+    background: $darkGlass;
+    padding: 30px;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    h1 {
+      padding: 30px;
+    }
+  }
+}
+
+.fan {
+  width: 100%;
+  background: url("../img/fan.jpg");
+
+  .fan_background {
+    background: rgba(32, 32, 32, 0.7);
+    padding-top: 100px;
+  }
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .options_one,
+  .options_two,
+  .options_three {
+    height: auto;
+    max-width: 30vw;
+    background: $darkGlass;
+    img {
+      width: 100%;
+      opacity: 0.8;
+    }
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorTwo;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    p {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorOne;
+      margin: 10px 20px;
+    }
+
+    ul {
+      margin: 5px 10px;
+      height: 66px;
+    }
+
+    li {
+      font-family: $fontTwo;
+      font-size: $font_h1Small;
+      color: $colorTwo;
+      line-height: 1.1em;
+    }
+
+    .cash {
+      font-size: $font_h2Middle;
+      color: $colorOne;
+      text-align: right;
+      padding-right: 20px;
+    }
+
+    a {
+      display: block;
+      width: 70%;
+      height: 50px;
+      margin: 20px auto;
+      text-align: center;
+      border: 1px solid white;
+      text-decoration: none;
+      line-height: 50px;
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorTwo;
+    }
+
+    .options_img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  .options_one:hover > ul li,
+  .options_two:hover > ul li,
+  .options_three:hover > ul li {
+    color: black;
+    font-family: $fontOne;
+
+  }
+
+  .options_one:hover > h2,
+  .options_two:hover > h2,
+  .options_three:hover > h2 {
+    color: black;
+    transition: .2s;
+  }
+
+  .options_one:hover > a,
+  .options_two:hover > a,
+  .options_three:hover > a {
+    border: 1px solid black;
+    color: $colorOne;
+  }
+
+  .options_one:hover,
+  .options_two:hover,
+  .options_three:hover {
+    background: $lightGlass;
+    transition: .2s;
+  }
+
+  .options_one a:hover,
+  .options_two a:hover,
+  .options_three a:hover {
+    box-shadow: 0 0 5px #323232;
+  }
+
+  .options_one a:active,
+  .options_two a:active,
+  .options_three a:active {
+    box-shadow: 0 0 5px #323232;
+  }
+}
+
+.taxi_free {
+  margin-top: 100px;
+  height: 350px;
+  width: 100%;
+  background: $darkGlass;
+  text-align: right;
+
+  .free_description {
+    display: inline-block;
+    width: 57%;
+    height: 350px;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorOne;
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    p {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorTwo;
+      margin: 20px 0;
+    }
+
+    ul {
+      margin: 5px 10px;
+    }
+
+    li {
+      font-family: $fontTwo;
+      font-size: $font_h1Small;
+      color: $colorTwo;
+      line-height: 1.1em;
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $fontOne;
+      color: $colorOne;
+    }
+
+  }
+  .taxiFree_img {
+    display: inline-block;
+    background: url(../img/drift_taxi.png) no-repeat left;
+    height: 350px;
+    width: 43%;
+    background-size: cover;
+  }
+}
+
+
+//РАЗДЕЛ ОБУЧЕНИЯ
+
+.price {
+  width: 100%;
+  background: url("../img/price.jpg") no-repeat center;
+  background-size: cover;
+
+  .price_background {
+    background: rgba(32, 32, 32, 0.7);
+    padding-top: 100px;
+  }
+}
+
+.amenities {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .amenities_one,
+  .amenities_two,
+  .amenities_three {
+    height: auto;
+    width: 30vw;
+    //background: $darkGlass;
+    box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.9);
+
+    .amenities_content {
+      height: 30%;
+    }
+
+    img {
+      width: 100%;
+      opacity: 0.8;
+    }
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorTwo;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    p {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorOne;
+      margin: 10px 20px;
+    }
+
+    ul {
+      margin: 5px 10px;
+      height: 66px;
+    }
+
+    li {
+      font-family: $fontTwo;
+      font-size: $font_h1Small;
+      color: $colorTwo;
+      line-height: 1.1em;
+    }
+
+    .cash {
+      font-size: $font_h2Middle;
+      color: $colorOne;
+      text-align: right;
+      padding-right: 20px;
+    }
+
+    a {
+      display: block;
+      width: 70%;
+      height: 50px;
+      margin: 20px auto;
+      text-align: center;
+      border: 1px solid white;
+      text-decoration: none;
+      line-height: 50px;
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorTwo;
+    }
+
+    .options_img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  .amenities_one:hover > ul li,
+  .amenities_two:hover > ul li,
+  .amenities_three:hover > ul li {
+    color: black;
+    font-family: $fontOne;
+
+  }
+
+  .amenities_one:hover > h2,
+  .amenities_two:hover > h2,
+  .amenities_three:hover > h2 {
+    color: black;
+    transition: .2s;
+  }
+
+  .amenities_one:hover > a,
+  .amenities_two:hover > a,
+  .amenities_three:hover > a {
+    border: 1px solid black;
+    color: $colorOne;
+  }
+
+  .amenities_one:hover,
+  .amenities_two:hover,
+  .amenities_three:hover {
+    background: $lightGlass;
+    transition: .2s;
+  }
+
+  .amenities_one a:hover,
+  .amenities_two a:hover,
+  .amenities_three a:hover {
+    box-shadow: 0 0 5px #323232;
+  }
+
+  .amenities_one a:active,
+  .amenities_two a:active,
+  .amenities_three a:active {
+    box-shadow: 0 0 5px #323232;
+  }
+}
+
+.fullLesson {
+  margin-top: 100px;
+  height: 300px;
+  width: 100%;
+  //background: $darkGlass;
+  box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.9);
+  text-align: right;
+
+  .fullLesson_description {
+    display: inline-block;
+    width: 57%;
+    height: 300px;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorOne;
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    ul {
+      margin: 5px 10px;
+    }
+
+    li {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorTwo;
+      line-height: 1.1em;
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $fontOne;
+      color: $colorOne;
+    }
+
+  }
+
+  .fullLesson_img {
+    display: inline-block;
+    background: url(../img/ult.png) no-repeat left;
+    height: 300px;
+    width: 43%;
+    background-size: cover;
+  }
+}
+
+//old page
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  text-align: center;
+  color: #e3e4e6;
+  font-family: $fontTwo;
+}
+
+.latest_1,
+.latest_2,
+.icons-wrap {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .85em;
+}
+
+.icons-wrap {
+  margin: 0 1vw;
+}
+
+.icons-wrap a {
+  padding: 0 0.5vh;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.icons-wrap i:hover {
+  transform: scale(1.3);
+  transition: .2s;
+}
+
+.fa-instagram:hover {
+  color: #ff8847;
+}
+
+.fa-vk:hover {
+  color: #1c4889;
+}
+
+.fa-pinterest-p:hover {
+  color: #61a8c1;
+}
+
+.latest_2 a {
+  text-decoration: none;
+}
+
+.onediv {
+  width: 100%;
+  height: 100vh;
+  background-color: $colorTwo;
+}
+
+.twodiv {
+  width: 100%;
+  height: 100vh;
+  background-color: $colorOne;
+}

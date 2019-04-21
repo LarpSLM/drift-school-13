@@ -8,3 +8,11 @@ height 620px
 
 border-right: 150px solid transparent;
 border-top: 620px solid rgba(32,32,32,0.9);
+
+border-left: 150px solid transparent;
+border-top: 450px solid rgba(32,32,32,0.9);
+}
+
+
+
+

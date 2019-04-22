@@ -196,7 +196,17 @@ body {
     font-size: 1.6em;
     color: white;
     text-align: justify;
-    margin: 10px 0; }
+    margin: 0.5vw 0; }
+  .school_description .history_description,
+  .school_description .idea_description,
+  .school_description .method_description {
+    display: inline-block;
+    width: 40vw;
+    height: 450px;
+    background: rgba(32, 32, 32, 0.9);
+    padding: 2vw;
+    box-sizing: border-box;
+    vertical-align: top; }
 
 .history {
   width: 100%;
@@ -208,16 +218,8 @@ body {
     display: inline-block;
     border-left: 150px solid transparent;
     border-top: 450px solid rgba(32, 32, 32, 0.9); }
-  .history .history_description {
-    display: inline-block;
-    width: 40vw;
-    height: 450px;
-    background: rgba(32, 32, 32, 0.9);
-    padding: 30px;
-    box-sizing: border-box;
-    vertical-align: top; }
-    .history .history_description h1 {
-      padding: 30px; }
+  .history .history_description h1 {
+    padding: 2vw; }
 
 .idea {
   width: 100%;
@@ -229,16 +231,8 @@ body {
     display: inline-block;
     border-right: 150px solid transparent;
     border-top: 450px solid rgba(32, 32, 32, 0.9); }
-  .idea .idea_description {
-    display: inline-block;
-    width: 40vw;
-    height: 450px;
-    background: rgba(32, 32, 32, 0.9);
-    padding: 30px;
-    box-sizing: border-box;
-    vertical-align: top; }
-    .idea .idea_description h1 {
-      padding: 30px; }
+  .idea .idea_description h1 {
+    padding: 2vw; }
 
 .method {
   width: 100%;
@@ -250,20 +244,205 @@ body {
     display: inline-block;
     border-left: 150px solid transparent;
     border-top: 450px solid rgba(32, 32, 32, 0.9); }
-  .method .method_description {
-    display: inline-block;
-    width: 40vw;
-    height: 450px;
+  .method .method_description h1 {
+    padding: 2vw; }
+
+.price {
+  width: 100%;
+  background: url("../img/price.jpg") no-repeat center;
+  background-size: cover; }
+  .price .price_background {
+    background: rgba(32, 32, 32, 0.7);
+    padding-top: 100px; }
+
+.amenities {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .amenities .amenities_one,
+  .amenities .amenities_two,
+  .amenities .amenities_three {
+    height: auto;
+    width: 30vw;
     background: rgba(32, 32, 32, 0.9);
-    padding: 30px;
     box-sizing: border-box;
-    vertical-align: top; }
-    .method .method_description h1 {
-      padding: 30px; }
+    padding: 2vw; }
+    .amenities .amenities_one .amenities_content,
+    .amenities .amenities_two .amenities_content,
+    .amenities .amenities_three .amenities_content {
+      height: 30%; }
+    .amenities .amenities_one img,
+    .amenities .amenities_two img,
+    .amenities .amenities_three img {
+      width: 100%;
+      opacity: 0.8; }
+    .amenities .amenities_one h2,
+    .amenities .amenities_two h2,
+    .amenities .amenities_three h2 {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 2.2em;
+      font-style: italic;
+      color: white;
+      text-align: center;
+      padding: 0 0 2vw 0;
+      margin: 0; }
+    .amenities .amenities_one p,
+    .amenities .amenities_two p,
+    .amenities .amenities_three p {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 1.6em;
+      color: #24b8f0;
+      margin: 0 0 10px 0; }
+    .amenities .amenities_one .amenities_content,
+    .amenities .amenities_two .amenities_content,
+    .amenities .amenities_three .amenities_content {
+      height: calc(55% - 5vw); }
+    .amenities .amenities_one ul,
+    .amenities .amenities_two ul,
+    .amenities .amenities_three ul {
+      margin: 5px 0; }
+    .amenities .amenities_one li,
+    .amenities .amenities_two li,
+    .amenities .amenities_three li {
+      font-family: "MagistralC", sans-serif;
+      font-size: 1.3em;
+      color: white;
+      line-height: 1.1em; }
+    .amenities .amenities_one .cash,
+    .amenities .amenities_two .cash,
+    .amenities .amenities_three .cash {
+      font-size: 1.9em;
+      color: #24b8f0;
+      text-align: right;
+      padding: 0;
+      margin: 1vw 0 1.5vw 0; }
+    .amenities .amenities_one a,
+    .amenities .amenities_two a,
+    .amenities .amenities_three a {
+      display: block;
+      width: 70%;
+      height: 50px;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid white;
+      text-decoration: none;
+      line-height: 50px;
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 2.2em;
+      font-style: italic;
+      color: white; }
+    .amenities .amenities_one .options_img,
+    .amenities .amenities_two .options_img,
+    .amenities .amenities_three .options_img {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+  .amenities .amenities_one:hover > .amenities_content ul li,
+  .amenities .amenities_two:hover > .amenities_content ul li,
+  .amenities .amenities_three:hover > .amenities_content ul li {
+    color: black;
+    font-family: "MagistralC-Bold", sans-serif; }
+  .amenities .amenities_one:hover > h2,
+  .amenities .amenities_two:hover > h2,
+  .amenities .amenities_three:hover > h2 {
+    color: black;
+    transition: .2s; }
+  .amenities .amenities_one:hover > a,
+  .amenities .amenities_two:hover > a,
+  .amenities .amenities_three:hover > a {
+    border: 1px solid black;
+    color: #24b8f0; }
+  .amenities .amenities_one:hover,
+  .amenities .amenities_two:hover,
+  .amenities .amenities_three:hover {
+    background: rgba(250, 250, 250, 0.9);
+    transition: .2s; }
+  .amenities .amenities_one a:hover,
+  .amenities .amenities_two a:hover,
+  .amenities .amenities_three a:hover {
+    box-shadow: 0 0 5px #323232; }
+  .amenities .amenities_one a:active,
+  .amenities .amenities_two a:active,
+  .amenities .amenities_three a:active {
+    box-shadow: 0 0 5px #323232; }
+
+.fullLesson {
+  margin-top: 100px;
+  width: 100%;
+  background: rgba(32, 32, 32, 0.9);
+  text-align: right; }
+  .fullLesson .fullLesson_description {
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: left; }
+    .fullLesson .fullLesson_description h2 {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 2.2em;
+      font-style: italic;
+      color: #24b8f0;
+      text-align: center;
+      margin: 1vw 0; }
+    .fullLesson .fullLesson_description ul {
+      margin: 5px 10px; }
+    .fullLesson .fullLesson_description li {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 1.6em;
+      color: white;
+      line-height: 1.1em;
+      margin: 5px 0; }
+    .fullLesson .fullLesson_description a {
+      text-decoration: none;
+      font-family: "MagistralC-Bold", sans-serif;
+      color: #24b8f0; }
+  .fullLesson .fullLesson_img {
+    display: inline-block;
+    background: url(../img/ult.png) no-repeat left;
+    height: 250px;
+    width: 43%;
+    background-size: cover; }
+
+.certificate {
+  height: 300px;
+  width: 100%;
+  background: rgba(32, 32, 32, 0.9);
+  text-align: left;
+  display: flex;
+  align-items: center; }
+  .certificate .certificate_description {
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: left; }
+    .certificate .certificate_description h2 {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 2.2em;
+      font-style: italic;
+      color: #24b8f0;
+      text-align: center;
+      margin: 0 0 1vw 0; }
+    .certificate .certificate_description p {
+      font-family: "MagistralC-Bold", sans-serif;
+      font-size: 1.6em;
+      color: white;
+      line-height: 1.1em;
+      margin: 5px 0; }
+  .certificate .certificate_img {
+    display: inline-block;
+    background: url(../img/certificate.png) no-repeat right center;
+    height: 300px;
+    width: 43%;
+    background-size: cover; }
 
 .fan {
   width: 100%;
-  background: url("../img/fan.jpg"); }
+  background: url(../img/fan.jpg) no-repeat;
+  background-size: cover; }
   .fan .fan_background {
     background: rgba(32, 32, 32, 0.7);
     padding-top: 100px; }
@@ -292,19 +471,19 @@ body {
       font-style: italic;
       color: white;
       text-align: center;
-      margin: 10px 0; }
+      margin: 1.5vw 2vw 1vw; }
     .options .options_one p,
     .options .options_two p,
     .options .options_three p {
       font-family: "MagistralC-Bold", sans-serif;
       font-size: 1.6em;
       color: #24b8f0;
-      margin: 10px 20px; }
+      margin: 0.5vw 2vw; }
     .options .options_one ul,
     .options .options_two ul,
     .options .options_three ul {
-      margin: 5px 10px;
-      height: 66px; }
+      margin: 5px 2vw;
+      height: 8vh; }
     .options .options_one li,
     .options .options_two li,
     .options .options_three li {
@@ -318,14 +497,15 @@ body {
       font-size: 1.9em;
       color: #24b8f0;
       text-align: right;
-      padding-right: 20px; }
+      padding-right: 2vw;
+      margin: 0 0 1vw; }
     .options .options_one a,
     .options .options_two a,
     .options .options_three a {
       display: block;
       width: 70%;
       height: 50px;
-      margin: 20px auto;
+      margin: 0 auto 2vw;
       text-align: center;
       border: 1px solid white;
       text-decoration: none;
@@ -380,7 +560,7 @@ body {
     width: 57%;
     height: 350px;
     vertical-align: top;
-    padding: 20px;
+    padding: 2vw;
     box-sizing: border-box;
     text-align: left; }
     .taxi_free .free_description h2 {
@@ -389,12 +569,12 @@ body {
       font-style: italic;
       color: #24b8f0;
       text-align: center;
-      margin: 25px 0; }
+      margin: 0.5vw 0 1.5vw; }
     .taxi_free .free_description p {
       font-family: "MagistralC-Bold", sans-serif;
       font-size: 1.6em;
       color: white;
-      margin: 20px 0; }
+      margin: 1vw 0; }
     .taxi_free .free_description ul {
       margin: 5px 10px; }
     .taxi_free .free_description li {
@@ -411,159 +591,6 @@ body {
     display: inline-block;
     background: url(../img/drift_taxi.png) no-repeat left;
     height: 350px;
-    width: 43%;
-    background-size: cover; }
-
-.price {
-  width: 100%;
-  background: url("../img/price.jpg") no-repeat center;
-  background-size: cover; }
-  .price .price_background {
-    background: rgba(32, 32, 32, 0.7);
-    padding-top: 100px; }
-
-.amenities {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .amenities .amenities_one,
-  .amenities .amenities_two,
-  .amenities .amenities_three {
-    height: auto;
-    width: 30vw;
-    box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.9); }
-    .amenities .amenities_one .amenities_content,
-    .amenities .amenities_two .amenities_content,
-    .amenities .amenities_three .amenities_content {
-      height: 30%; }
-    .amenities .amenities_one img,
-    .amenities .amenities_two img,
-    .amenities .amenities_three img {
-      width: 100%;
-      opacity: 0.8; }
-    .amenities .amenities_one h2,
-    .amenities .amenities_two h2,
-    .amenities .amenities_three h2 {
-      font-family: "MagistralC-Bold", sans-serif;
-      font-size: 2.2em;
-      font-style: italic;
-      color: white;
-      text-align: center;
-      margin: 10px 0; }
-    .amenities .amenities_one p,
-    .amenities .amenities_two p,
-    .amenities .amenities_three p {
-      font-family: "MagistralC-Bold", sans-serif;
-      font-size: 1.6em;
-      color: #24b8f0;
-      margin: 10px 20px; }
-    .amenities .amenities_one ul,
-    .amenities .amenities_two ul,
-    .amenities .amenities_three ul {
-      margin: 5px 10px;
-      height: 66px; }
-    .amenities .amenities_one li,
-    .amenities .amenities_two li,
-    .amenities .amenities_three li {
-      font-family: "MagistralC", sans-serif;
-      font-size: 1.3em;
-      color: white;
-      line-height: 1.1em; }
-    .amenities .amenities_one .cash,
-    .amenities .amenities_two .cash,
-    .amenities .amenities_three .cash {
-      font-size: 1.9em;
-      color: #24b8f0;
-      text-align: right;
-      padding-right: 20px; }
-    .amenities .amenities_one a,
-    .amenities .amenities_two a,
-    .amenities .amenities_three a {
-      display: block;
-      width: 70%;
-      height: 50px;
-      margin: 20px auto;
-      text-align: center;
-      border: 1px solid white;
-      text-decoration: none;
-      line-height: 50px;
-      font-family: "MagistralC-Bold", sans-serif;
-      font-size: 2.2em;
-      font-style: italic;
-      color: white; }
-    .amenities .amenities_one .options_img,
-    .amenities .amenities_two .options_img,
-    .amenities .amenities_three .options_img {
-      width: 100%;
-      height: auto;
-      overflow: hidden; }
-  .amenities .amenities_one:hover > .amenities_content ul li,
-  .amenities .amenities_two:hover > .amenities_content ul li,
-  .amenities .amenities_three:hover > .amenities_content ul li {
-    color: black;
-    font-family: "MagistralC-Bold", sans-serif; }
-  .amenities .amenities_one:hover > h2,
-  .amenities .amenities_two:hover > h2,
-  .amenities .amenities_three:hover > h2 {
-    color: black;
-    transition: .2s; }
-  .amenities .amenities_one:hover > a,
-  .amenities .amenities_two:hover > a,
-  .amenities .amenities_three:hover > a {
-    border: 1px solid black;
-    color: #24b8f0; }
-  .amenities .amenities_one:hover,
-  .amenities .amenities_two:hover,
-  .amenities .amenities_three:hover {
-    background: rgba(250, 250, 250, 0.9);
-    transition: .2s; }
-  .amenities .amenities_one a:hover,
-  .amenities .amenities_two a:hover,
-  .amenities .amenities_three a:hover {
-    box-shadow: 0 0 5px #323232; }
-  .amenities .amenities_one a:active,
-  .amenities .amenities_two a:active,
-  .amenities .amenities_three a:active {
-    box-shadow: 0 0 5px #323232; }
-
-.fullLesson {
-  margin-top: 100px;
-  height: 300px;
-  width: 100%;
-  box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.9);
-  text-align: right; }
-  .fullLesson .fullLesson_description {
-    display: inline-block;
-    width: 57%;
-    height: 300px;
-    vertical-align: top;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: left; }
-    .fullLesson .fullLesson_description h2 {
-      font-family: "MagistralC-Bold", sans-serif;
-      font-size: 2.2em;
-      font-style: italic;
-      color: #24b8f0;
-      text-align: center;
-      margin: 25px 0; }
-    .fullLesson .fullLesson_description ul {
-      margin: 5px 10px; }
-    .fullLesson .fullLesson_description li {
-      font-family: "MagistralC-Bold", sans-serif;
-      font-size: 1.6em;
-      color: white;
-      line-height: 1.1em;
-      margin: 5px 0; }
-    .fullLesson .fullLesson_description a {
-      text-decoration: none;
-      font-family: "MagistralC-Bold", sans-serif;
-      color: #24b8f0; }
-  .fullLesson .fullLesson_img {
-    display: inline-block;
-    background: url(../img/ult.png) no-repeat left;
-    height: 300px;
     width: 43%;
     background-size: cover; }
 

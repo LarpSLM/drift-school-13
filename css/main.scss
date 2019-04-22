@@ -275,7 +275,6 @@ body {
     color: $colorOne;
     text-align: center;
     margin: 0;
-
   }
 
   p {
@@ -283,7 +282,19 @@ body {
     font-size: $font_p;
     color: $colorTwo;
     text-align: justify;
-    margin: 10px 0;
+    margin: 0.5vw 0;
+  }
+
+  .history_description,
+  .idea_description,
+  .method_description {
+    display: inline-block;
+    width: 40vw;
+    height: 450px;
+    background: $darkGlass;
+    padding: 2vw;
+    box-sizing: border-box;
+    vertical-align: top;
   }
 }
 
@@ -301,16 +312,8 @@ body {
   }
 
   .history_description {
-    display: inline-block;
-    width: 40vw;
-    height: 450px;
-    background: $darkGlass;
-    padding: 30px;
-    box-sizing: border-box;
-    vertical-align: top;
-
     h1 {
-      padding: 30px;
+      padding: 2vw;
     }
   }
 }
@@ -329,16 +332,8 @@ body {
   }
 
   .idea_description {
-    display: inline-block;
-    width: 40vw;
-    height: 450px;
-    background: $darkGlass;
-    padding: 30px;
-    box-sizing: border-box;
-    vertical-align: top;
-
     h1 {
-      padding: 30px;
+      padding: 2vw;
     }
   }
 }
@@ -357,23 +352,252 @@ body {
   }
 
   .method_description {
-    display: inline-block;
-    width: 40vw;
-    height: 450px;
-    background: $darkGlass;
-    padding: 30px;
-    box-sizing: border-box;
-    vertical-align: top;
-
     h1 {
-      padding: 30px;
+      padding: 2vw;
     }
   }
 }
 
+//РАЗДЕЛ ОБУЧЕНИЯ
+
+.price {
+  width: 100%;
+  background: url("../img/price.jpg") no-repeat center;
+  background-size: cover;
+
+  .price_background {
+    background: rgba(32, 32, 32, 0.7);
+    padding-top: 100px;
+  }
+}
+
+.amenities {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .amenities_one,
+  .amenities_two,
+  .amenities_three {
+    height: auto;
+    width: 30vw;
+    background: $darkGlass;
+    box-sizing: border-box;
+    padding: 2vw;
+
+    .amenities_content {
+      height: 30%;
+    }
+
+    img {
+      width: 100%;
+      opacity: 0.8;
+    }
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorTwo;
+      text-align: center;
+      padding: 0 0 2vw 0;
+      margin: 0;
+    }
+
+    p {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorOne;
+      margin: 0 0 10px 0;
+    }
+
+    .amenities_content {
+      height: calc(55% - 5vw);
+    }
+
+    ul {
+      margin: 5px 0;
+    }
+
+    li {
+      font-family: $fontTwo;
+      font-size: $font_h1Small;
+      color: $colorTwo;
+      line-height: 1.1em;
+    }
+
+    .cash {
+      font-size: $font_h2Middle;
+      color: $colorOne;
+      text-align: right;
+      padding: 0;
+      margin: 1vw 0 1.5vw 0;
+    }
+
+    a {
+      display: block;
+      width: 70%;
+      height: 50px;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid white;
+      text-decoration: none;
+      line-height: 50px;
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorTwo;
+    }
+
+    .options_img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  .amenities_one:hover > .amenities_content ul li,
+  .amenities_two:hover > .amenities_content ul li,
+  .amenities_three:hover > .amenities_content ul li {
+    color: black;
+    font-family: $fontOne;
+  }
+
+  .amenities_one:hover > h2,
+  .amenities_two:hover > h2,
+  .amenities_three:hover > h2 {
+    color: black;
+    transition: .2s;
+  }
+
+  .amenities_one:hover > a,
+  .amenities_two:hover > a,
+  .amenities_three:hover > a {
+    border: 1px solid black;
+    color: $colorOne;
+  }
+
+  .amenities_one:hover,
+  .amenities_two:hover,
+  .amenities_three:hover {
+    background: $lightGlass;
+    transition: .2s;
+  }
+
+  .amenities_one a:hover,
+  .amenities_two a:hover,
+  .amenities_three a:hover {
+    box-shadow: 0 0 5px #323232;
+  }
+
+  .amenities_one a:active,
+  .amenities_two a:active,
+  .amenities_three a:active {
+    box-shadow: 0 0 5px #323232;
+  }
+}
+
+.fullLesson {
+  margin-top: 100px;
+  width: 100%;
+  background: $darkGlass;
+  text-align: right;
+
+  .fullLesson_description {
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: left;
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorOne;
+      text-align: center;
+      margin: 1vw 0;
+    }
+
+    ul {
+      margin: 5px 10px;
+    }
+
+    li {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorTwo;
+      line-height: 1.1em;
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $fontOne;
+      color: $colorOne;
+    }
+  }
+
+  .fullLesson_img {
+    display: inline-block;
+    background: url(../img/ult.png) no-repeat left;
+    height: 250px;
+    width: 43%;
+    background-size: cover;
+  }
+}
+
+.certificate {
+  height: 300px;
+  width: 100%;
+  background: $darkGlass;
+  text-align: left;
+  display: flex;
+  align-items: center;
+
+  .certificate_description {
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: left;
+
+    h2 {
+      font-family: $fontOne;
+      font-size: $font_h1Middle;
+      font-style: italic;
+      color: $colorOne;
+      text-align: center;
+      margin: 0 0 1vw 0;
+    }
+
+    p {
+      font-family: $fontOne;
+      font-size: $font_p;
+      color: $colorTwo;
+      line-height: 1.1em;
+      margin: 5px 0;
+    }
+  }
+
+  .certificate_img {
+    display: inline-block;
+    background: url(../img/certificate.png) no-repeat right center;
+    height: 300px;
+    width: 43%;
+    background-size: cover;
+  }
+}
+
+//РАЗДЕЛ ВАРИАНТОВ РАЗВЛЕЧЕНИЙ
+
 .fan {
   width: 100%;
-  background: url("../img/fan.jpg");
+  background: url(../img/fan.jpg) no-repeat;
+  background-size: cover;
 
   .fan_background {
     background: rgba(32, 32, 32, 0.7);
@@ -404,19 +628,19 @@ body {
       font-style: italic;
       color: $colorTwo;
       text-align: center;
-      margin: 10px 0;
+      margin: 1.5vw 2vw 1vw;
     }
 
     p {
       font-family: $fontOne;
       font-size: $font_p;
       color: $colorOne;
-      margin: 10px 20px;
+      margin: 0.5vw 2vw;
     }
 
     ul {
-      margin: 5px 10px;
-      height: 66px;
+      margin: 5px 2vw;
+      height: 8vh;
     }
 
     li {
@@ -430,14 +654,15 @@ body {
       font-size: $font_h2Middle;
       color: $colorOne;
       text-align: right;
-      padding-right: 20px;
+      padding-right: 2vw;
+      margin: 0 0 1vw;
     }
 
     a {
       display: block;
       width: 70%;
       height: 50px;
-      margin: 20px auto;
+      margin: 0 auto 2vw;
       text-align: center;
       border: 1px solid white;
       text-decoration: none;
@@ -509,7 +734,7 @@ body {
     width: 57%;
     height: 350px;
     vertical-align: top;
-    padding: 20px;
+    padding: 2vw;
     box-sizing: border-box;
     text-align: left;
 
@@ -519,14 +744,14 @@ body {
       font-style: italic;
       color: $colorOne;
       text-align: center;
-      margin: 25px 0;
+      margin: 0.5vw 0 1.5vw;
     }
 
     p {
       font-family: $fontOne;
       font-size: $font_p;
       color: $colorTwo;
-      margin: 20px 0;
+      margin: 1vw 0;
     }
 
     ul {
@@ -558,195 +783,7 @@ body {
 }
 
 
-//РАЗДЕЛ ОБУЧЕНИЯ
 
-.price {
-  width: 100%;
-  background: url("../img/price.jpg") no-repeat center;
-  background-size: cover;
-
-  .price_background {
-    background: rgba(32, 32, 32, 0.7);
-    padding-top: 100px;
-  }
-}
-
-.amenities {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  .amenities_one,
-  .amenities_two,
-  .amenities_three {
-    height: auto;
-    width: 30vw;
-    //background: $darkGlass;
-    box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.9);
-
-    .amenities_content {
-      height: 30%;
-    }
-
-    img {
-      width: 100%;
-      opacity: 0.8;
-    }
-
-    h2 {
-      font-family: $fontOne;
-      font-size: $font_h1Middle;
-      font-style: italic;
-      color: $colorTwo;
-      text-align: center;
-      margin: 10px 0;
-    }
-
-    p {
-      font-family: $fontOne;
-      font-size: $font_p;
-      color: $colorOne;
-      margin: 10px 20px;
-    }
-
-    ul {
-      margin: 5px 10px;
-      height: 66px;
-    }
-
-    li {
-      font-family: $fontTwo;
-      font-size: $font_h1Small;
-      color: $colorTwo;
-      line-height: 1.1em;
-    }
-
-    .cash {
-      font-size: $font_h2Middle;
-      color: $colorOne;
-      text-align: right;
-      padding-right: 20px;
-    }
-
-    a {
-      display: block;
-      width: 70%;
-      height: 50px;
-      margin: 20px auto;
-      text-align: center;
-      border: 1px solid white;
-      text-decoration: none;
-      line-height: 50px;
-      font-family: $fontOne;
-      font-size: $font_h1Middle;
-      font-style: italic;
-      color: $colorTwo;
-    }
-
-    .options_img {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
-  }
-
-  .amenities_one:hover > .amenities_content ul li,
-  .amenities_two:hover > .amenities_content ul li,
-  .amenities_three:hover > .amenities_content ul li {
-    color: black;
-    font-family: $fontOne;
-
-  }
-
-  .amenities_one:hover > h2,
-  .amenities_two:hover > h2,
-  .amenities_three:hover > h2 {
-    color: black;
-    transition: .2s;
-  }
-
-  .amenities_one:hover > a,
-  .amenities_two:hover > a,
-  .amenities_three:hover > a {
-    border: 1px solid black;
-    color: $colorOne;
-  }
-
-  .amenities_one:hover,
-  .amenities_two:hover,
-  .amenities_three:hover {
-    background: $lightGlass;
-    transition: .2s;
-  }
-
-  .amenities_one a:hover,
-  .amenities_two a:hover,
-  .amenities_three a:hover {
-    box-shadow: 0 0 5px #323232;
-  }
-
-  .amenities_one a:active,
-  .amenities_two a:active,
-  .amenities_three a:active {
-    box-shadow: 0 0 5px #323232;
-  }
-}
-
-.fullLesson {
-  margin-top: 100px;
-  height: 300px;
-  width: 100%;
-  //background: $darkGlass;
-  box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.9);
-  text-align: right;
-
-  .fullLesson_description {
-    display: inline-block;
-    width: 57%;
-    height: 300px;
-    vertical-align: top;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: left;
-
-    h2 {
-      font-family: $fontOne;
-      font-size: $font_h1Middle;
-      font-style: italic;
-      color: $colorOne;
-      text-align: center;
-      margin: 25px 0;
-    }
-
-    ul {
-      margin: 5px 10px;
-    }
-
-    li {
-      font-family: $fontOne;
-      font-size: $font_p;
-      color: $colorTwo;
-      line-height: 1.1em;
-      margin: 5px 0;
-    }
-
-    a {
-      text-decoration: none;
-      font-family: $fontOne;
-      color: $colorOne;
-    }
-
-  }
-
-  .fullLesson_img {
-    display: inline-block;
-    background: url(../img/ult.png) no-repeat left;
-    height: 300px;
-    width: 43%;
-    background-size: cover;
-  }
-}
 
 //old page
 

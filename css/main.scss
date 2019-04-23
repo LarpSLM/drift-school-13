@@ -85,6 +85,10 @@ body {
     text-decoration: none;
     line-height: 25px;
   }
+
+  .active_certificate {
+    width: 250px;
+  }
 }
 
 .navbarOne {
@@ -194,7 +198,6 @@ body {
 
   .content_description {
     width: 840px;
-    height: 40vh;
     text-align: center;
 
     .welcome {
@@ -672,12 +675,6 @@ body {
       font-style: italic;
       color: $colorTwo;
     }
-
-    .options_img {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
   }
 
   .options_one:hover > ul li,
@@ -782,6 +779,61 @@ body {
   }
 }
 
+//РАЗДЕЛ АВТОМОБИЛЕЙ
+
+.auto {
+  width: 100%;
+  background: url("../img/auto.jpg") center;
+  background-size: cover;
+
+  .auto_background {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    background: rgba(32, 32, 32, 0.7);
+  }
+}
+
+.auto_one,
+.auto_two {
+  display: inline-block;
+  width: 45%;
+  background: $darkGlass;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    font-family: $fontOne;
+    font-size: $font_h1Middle;
+    font-style: italic;
+    color: $colorTwo;
+    text-align: center;
+    margin: 1.5vw 2vw 1vw;
+  }
+
+  h2 {
+    font-family: $fontOne;
+    font-size: $font_h2Middle;
+    color: $colorOne;
+    text-align: left;
+    margin: 0.5vw 2vw;
+  }
+
+  p {
+    font-family: $fontTwo;
+    font-size: $font_h1Small;
+    margin: 0 2vw;
+    color: $colorTwo;
+    text-align: justify;
+  }
+
+  p:last-child {
+    padding: 0 0 2vw 0;
+  }
+}
 
 
 
